@@ -15,7 +15,7 @@ Status: discovery draft updated with the user's latest scoring, access, and form
 | REQ-007 | Court availability affects division planning; the default total court count is 12. |
 | REQ-008 | A division supports up to eight teams; seven-team divisions are also relevant. |
 | REQ-009 | Follow a round-robin style tournament structure and consult the supplied PDF for ordering and details. |
-| REQ-010 | This phase produces Markdown documentation, specifications, agent/UI skills, project status, milestones, and design rules only. |
+| REQ-010 | Original scope was documentation only. On 2026-10-16 the user authorized M0/M1 implementation, parallel work, and incremental commits. Later milestone features remain gated. |
 | REQ-011 | Ask questions and do not assume unanswered requirements. |
 | REQ-012 | Divisions support 4–8 teams; doubles is the default and singles is a division-wide option. |
 | REQ-013 | Use the supplied seven/eight-team schedules, with manager rearrangement. Team numbers are random schedule positions, not ranking inputs. |
@@ -50,6 +50,6 @@ These appear in the PDF but need clarification where ambiguous or contradictory.
 
 ## Unspecified
 
-The backend selection is Supabase/PostgreSQL under the delegated database choice. The website framework recommendation is Next.js. Three project-local reusable skills and specialist role briefs have been prepared, without changing global agent configuration or spawning workers.
+The backend selection is Supabase/PostgreSQL under the delegated database choice. Next.js is the M1 website engineering choice. Three project-local reusable skills and specialist role briefs are available. Parallel agents are authorized for M0/M1; global agent configuration is unchanged.
 
 Remaining unresolved rules include supported ranking/format choices, residual-tie behavior, scheduling defaults/validation, manager account registration and exact editing privileges, public publication/directory policy, and precise rearrangement behavior. See the current [decision register](../docs/open-decisions.md).

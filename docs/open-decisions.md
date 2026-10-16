@@ -25,6 +25,10 @@ Updated 2026-10-16 with the latest scoring, login, format, placement, and tourna
 | D-17 | Manager chooses the format for divisions of 4–6 teams. Supported options/default remain unspecified. |
 | D-18 | In two-stage eight-team mode, manager chooses separate winners-pool places 1–4/consolation places 5–8 or all eight ranked by combined results. No default specified. |
 | D-19 | Any signed-in manager can create a tournament and becomes its main admin. Manager-account registration remains unspecified. |
+| D-20 | On 2026-10-16 the user authorized M0/M1 implementation, parallel work, and incremental commits; explicitly defer remaining detailed product questions to their relevant milestones. |
+| D-21 | User plans to push Git and configure Vercel/GitHub integration and website domain. Android SDK license acceptance and tool installation explicitly approved. |
+
+M1 engineering choices: Next.js from the documented website recommendation and temporary native identifiers `com.example.courtwave`. These identifiers do not assume ownership of a website domain and must be replaced before distribution. See [foundation handoff](foundation-handoff.md) for deferred-question gates.
 
 ## Active questions
 
@@ -59,7 +63,7 @@ Still define how someone registers a manager account, submanager editing limits,
 
 ### Q-05 — Public lifecycle and operating constraints
 
-Links/QR access and names-only player exposure are confirmed. Public directory/search indexing, draft visibility/publication, private player fields (if any), tournament archive behavior, expected tournament/audience scale, and personal/non-commercial website eligibility are not specified. Next.js is recommended for the website but has not been explicitly accepted.
+Links/QR access and names-only player exposure are confirmed. Public directory/search indexing, draft visibility/publication, private player fields (if any), tournament archive behavior, expected tournament/audience scale, and personal/non-commercial website eligibility are not specified. Next.js is adopted as the M1 engineering choice for the Vercel website. External integration and domain configuration are left to the user's planned Vercel/GitHub setup.
 
 ### Q-06 — Scheduling format and editing details
 

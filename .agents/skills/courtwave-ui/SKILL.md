@@ -17,5 +17,5 @@ Use large touch targets, visible keyboard focus, labeled score inputs, scalable 
 
 No SMS setup or offline-write UI belongs in launch scope. Do not introduce payments, social feeds, galleries, or a directory without a user decision.
 
-While documentation-only authorization is active, deliver design rules, component/state specifications, or explicitly requested design assets—not application components or scaffolds. Verify actual contrast and source-rule alignment; avoid claiming screenshot or runtime verification when only documents were reviewed.
+Read the current authorization in AGENTS.md. M0/M1 now allow app scaffolds and branded foundation shells. Do not implement login or tournament workflows before their milestones are authorized. Verify actual contrast and source-rule alignment; avoid claiming screenshot or runtime verification when only documents were reviewed.
 

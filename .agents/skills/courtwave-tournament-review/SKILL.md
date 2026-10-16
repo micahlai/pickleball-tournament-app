@@ -19,5 +19,5 @@ Managers choose points targets and ranking rules; the ranking default is most wi
 
 Report each finding with its rule/source, concrete schedule or score example, consequence, and decision needed. Use synthetic identities. Do not use the PDF's illustrative historical ranks as test truth.
 
-Current work is documentation-only. Future implementation verification should target domain invariants and approved examples rather than testing that code repeats its own formula.
+Current authorization covers M0/M1 foundations. Domain feature implementation remains gated to M2–M4. Future verification should target domain invariants and approved examples rather than testing that code repeats its own formula.
 

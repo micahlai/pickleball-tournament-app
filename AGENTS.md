@@ -2,7 +2,9 @@
 
 ## Current authorization
 
-This project is in discovery and documentation only. The user explicitly said not to start development. Do not scaffold applications, install application dependencies, implement features, create database migrations, provision services, or deploy until the user authorizes development.
+On 2026-10-16 the user authorized M0 and M1 implementation, parallel work where possible, and incremental Git commits. Complete the planning handoff and runnable Flutter iOS/Android and web foundations, with local development tools, configuration, and checks.
+
+M2–M6 remain outside this authorization: do not implement authentication, provision services, create database migrations, implement tournament features, or deploy. The earlier documentation-only restriction is superseded for M0/M1. The user plans to push the repository and configure GitHub integration/domain in Vercel.
 
 The user asked to be consulted instead of having requirements assumed. Record unanswered questions as unresolved. Distinguish confirmed user requirements, source-document statements, proposals, and accepted decisions. A recommendation is not an accepted decision.
 
