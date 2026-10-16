@@ -35,4 +35,4 @@ Project-local reusable skills are in `.agents/skills/`: `courtwave-planning`, `c
 - SMS and offline support are later scope; first release requires internet.
 - Prefer free services. Raise required paid resources to the user before provisioning.
 
-The user delegated the database choice and temporary name/logo. Supabase/PostgreSQL is the selected planning baseline; Next.js is a website recommendation. The temporary brand is Courtwave, with the exact user palette recorded in docs/brand-guidelines.md. Do not treat proposed defaults as accepted product rules.
+The user delegated the database choice and temporary name/logo. Supabase/PostgreSQL is the selected backend baseline for M2; Next.js is the adopted M1 website engineering choice. The temporary brand is Courtwave, with the exact user palette recorded in docs/brand-guidelines.md. Do not treat proposed business defaults as accepted product rules.

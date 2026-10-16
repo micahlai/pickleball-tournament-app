@@ -1,6 +1,6 @@
 # Design rules
 
-Status: proposed implementation guidance. User-approved inputs are the palette, public names-only viewing, manager operations, and temporary branding. No UI has been implemented.
+Status: guidance applied to the M1 web/mobile foundation shells. User-approved inputs are the palette, public names-only viewing, manager operations, and temporary branding. Tournament and manager feature screens remain later scope.
 
 ## Product priorities
 
@@ -12,7 +12,7 @@ The UI/UX skill search returned marketing/night-mode suggestions rather than a s
 
 ## Tokens and typography
 
-Use primitive → semantic → component token layers from [design-tokens.json](../assets/design-tokens.json). This file is a design specification, not a Flutter theme or CSS implementation.
+Use primitive → semantic → component token layers from [design-tokens.json](../assets/design-tokens.json). The M1 web CSS and Flutter theme mirror the specification; update both implementations together when these values change.
 
 Proposed typography: native system sans-serif for body and headings, tabular figures for scores and times. Target 16 logical units for body text, 14 for secondary labels, 20–32 for hierarchy, and 28–40 for scores. Support enlarged system text; do not shrink text to fit player names.
 

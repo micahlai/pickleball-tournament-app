@@ -17,6 +17,7 @@ playwright-report/
 test-results/
 *.tsbuildinfo
 .dart_tool/
+.kotlin/
 .flutter-plugins-dependencies
 .pub-cache/
 build/

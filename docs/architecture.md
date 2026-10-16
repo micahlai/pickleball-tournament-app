@@ -1,10 +1,10 @@
 # Architecture and database decision
 
-Status: database selected under the user's delegated choice; website framework recommended. Documentation only, 2026-10-16.
+Status: M0/M1 implementation authorized, 2026-10-16. Database baseline selected; Flutter and Next.js foundations established. Backend operations remain later scope.
 
 ## Selection
 
-Use **Supabase-hosted PostgreSQL** for persistence and **Supabase Auth** for manager identity. Use the free tier initially, subject to operational limits below. Flutter remains the required iOS/Android client. Recommend **Next.js with TypeScript on Vercel** for the public website and manager workspace; this framework has not yet been explicitly confirmed by the user.
+Use **Supabase-hosted PostgreSQL** for persistence and **Supabase Auth** for manager identity in M2. Start with the free tier subject to the operational limits below. Flutter is the required iOS/Android client. **Next.js with TypeScript on Vercel** is adopted for the M1 website scaffold from the documented recommendation; the user plans to connect GitHub and configure their domain through Vercel.
 
 Why this fits: tournaments, divisions, teams, fixtures, and score revisions form linked records with consistency constraints. PostgreSQL supports that relational model; Supabase provides the database, authentication, and Flutter integration in one service. This is an architectural judgment, not a measured capacity guarantee. See the [Flutter quickstart](https://supabase.com/docs/guides/getting-started/quickstarts/flutter), [row-security documentation](https://supabase.com/docs/guides/database/postgres/row-level-security), and [Next.js on Vercel](https://vercel.com/docs/frameworks/full-stack/nextjs).
 
@@ -45,16 +45,16 @@ Vercel remains the chosen website host. Its [Hobby plan](https://vercel.com/docs
 
 Raise any required paid plan, email service, or other recurring expense to the user before provisioning. No accounts, paid plans, infrastructure, or deployment were created during this phase.
 
-## Proposed future repository layout
+## Repository layout
 
 - `apps/mobile/`: Flutter app.
-- `apps/web/`: web app if Next.js recommendation is adopted.
-- `backend/`: shared backend definitions and operations.
+- `apps/web/`: Next.js web foundation.
+- `backend/`: future shared backend definitions and operations, not yet created.
 - `specs/`: product/domain contracts and future conformance fixtures.
 - `docs/`: decisions, operations, design rules, and project status.
 - `.agents/skills/`: project-local reusable guidance.
 
-Only documentation, skills, and design assets exist now; the future application directories are not scaffolded.
+M1 adds application source, dependency locks, native projects, local configuration guidance, and CI checks. SDKs and generated build output remain outside Git. No database, authentication, or tournament feature is implemented by the foundations.
 
 ## Unresolved before implementation
 

@@ -16,6 +16,9 @@ if [[ ! -x "$courtwave_flutter" ]]; then
   exit 1
 fi
 
+# Also expose its bundled Dart and Flutter commands to platform subprocesses.
+export PATH="$(dirname "$courtwave_flutter"):$PATH"
+
 if [[ -z "${ANDROID_HOME:-}" && -d "$courtwave_tools/android-sdk" ]]; then
   export ANDROID_HOME="$courtwave_tools/android-sdk"
 fi

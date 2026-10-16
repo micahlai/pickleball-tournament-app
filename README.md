@@ -1,10 +1,23 @@
 # Courtwave — pickleball tournament planning
 
-Status: discovery and documentation only. Development has not been authorized.
+Status: M0 planning handoff and M1 app foundations complete. Local web, Android and iOS simulator checks pass. Later feature milestones remain gated.
 
 The requested product includes a Flutter app for iOS and Android, a website hosted on Vercel, and a shared backend with persistent database storage. Tournament managers sign in; players can view tournament schedules and scores without accounts through links and QR codes. Courtwave is a temporary name chosen at the user's request.
 
-Supabase/PostgreSQL is the selected database planning baseline, starting with its free tier. Next.js on Vercel is the recommended website framework. No services have been provisioned.
+The repository now contains a Flutter project in `apps/mobile` and a Next.js website in `apps/web`. Both use the temporary Courtwave identity and supplied palette. Supabase/PostgreSQL remains the selected database baseline for M2; no external services have been provisioned.
+
+## Run locally
+
+Use Node 24.22.0 and pnpm 11.25.0, then run:
+
+```sh
+pnpm install --frozen-lockfile
+pnpm dev
+```
+
+Open `http://localhost:3000`. Run web checks with `pnpm check`. For mobile, use `pnpm mobile:doctor`, `pnpm mobile:get`, and `pnpm mobile:run` with Flutter 3.47.7. See the [development guide](docs/development.md) for toolchains, Android/iOS builds, and GitHub-to-Vercel integration.
+
+These are foundation shells. Authentication, database access, scheduling and scoring belong to later milestones.
 
 ## Planning documents
 
@@ -19,6 +32,8 @@ Supabase/PostgreSQL is the selected database planning baseline, starting with it
 - [Product flows](specs/experience.md)
 - [Acceptance criteria](specs/acceptance.md)
 - [Milestones](docs/milestones.md)
+- [M0 handoff and deferred feature gates](docs/foundation-handoff.md)
+- [Development setup](docs/development.md)
 - [Brand guidelines and temporary logo](docs/brand-guidelines.md)
 - [Design rules](docs/design-rules.md) and [token specification](assets/design-tokens.json)
 - [Reusable skills and specialist role briefs](docs/agent-workflow.md)
