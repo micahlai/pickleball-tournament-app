@@ -1,6 +1,6 @@
 # Project-local skills and specialist roles
 
-Status: reusable planning guidance created in the repository. No subagents were launched, no global skills were installed, and no runtime agent configuration is claimed.
+Status: reusable project guidance. M0/M1 parallel implementation was explicitly authorized on 2026-10-16. Specialist agents may own disjoint mobile/web/toolchain work; only the coordinator commits. No global agent configuration is claimed.
 
 ## Skills
 
@@ -24,7 +24,7 @@ These are task briefs for future subagents, not autonomous workers or a mandate 
 
 ## Delegation protocol
 
-When the user or applicable instructions authorize parallel agent work, assign a bounded question, necessary source documents, allowed files, and the current documentation-only restriction. Use disjoint edit ownership; have a reviewer report findings rather than rewrite another agent's active files.
+When parallel agent work is authorized, assign a bounded task, necessary source documents, allowed files, and the current milestone scope. Use disjoint edit ownership; have a reviewer report findings rather than rewrite another agent's active files.
 
 A handoff should state:
 - Objective and deliverable.
@@ -35,5 +35,5 @@ A handoff should state:
 
 The coordinating agent resolves conflicts using user decisions, not majority vote or plausible assumptions. Preserve uncertain findings as questions.
 
-Implementation, service provisioning, and deployment remain prohibited until separately authorized. Creating these role briefs does not grant permission for those actions.
+M0/M1 implementation is authorized. Later milestone implementation, external service provisioning, and deployment remain gated. Creating these role briefs does not expand authorization.
 

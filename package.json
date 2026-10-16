@@ -1,0 +1,24 @@
+{
+  "name": "courtwave",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=24 <27"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @courtwave/web dev",
+    "build": "pnpm --filter @courtwave/web build",
+    "start": "pnpm --filter @courtwave/web start",
+    "lint": "pnpm --filter @courtwave/web lint",
+    "typecheck": "pnpm --filter @courtwave/web typecheck",
+    "check": "pnpm lint && pnpm typecheck && pnpm build",
+    "mobile:doctor": "./scripts/flutter.sh doctor -v",
+    "mobile:get": "cd apps/mobile && ../../scripts/flutter.sh pub get",
+    "mobile:analyze": "cd apps/mobile && ../../scripts/flutter.sh analyze",
+    "mobile:test": "cd apps/mobile && ../../scripts/flutter.sh test",
+    "mobile:run": "cd apps/mobile && ../../scripts/flutter.sh run",
+    "mobile:build:android": "cd apps/mobile && ../../scripts/flutter.sh build apk --debug",
+    "mobile:build:ios": "cd apps/mobile && ../../scripts/flutter.sh build ios --simulator --debug --no-codesign"
+  }
+}
