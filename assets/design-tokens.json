@@ -1,0 +1,70 @@
+{
+  "description": "Provisional Courtwave design specification. Not a generated Flutter theme or CSS implementation.",
+  "status": "User palette confirmed; semantic assignments and sizing proposed.",
+  "primitive": {
+    "color": {
+      "earth": "#81745E",
+      "slate": "#5F6582",
+      "teal": "#5F7B82",
+      "sand": "#FFD791",
+      "periwinkle": "#91A4FF",
+      "white": "#FFFFFF",
+      "ink": "#202431"
+    },
+    "space": [
+      4,
+      8,
+      12,
+      16,
+      24,
+      32
+    ],
+    "radius": {
+      "small": 8,
+      "medium": 12
+    },
+    "type": {
+      "body": 16,
+      "secondary": 14,
+      "heading": 24,
+      "score": 32
+    },
+    "touchMinimum": 48
+  },
+  "semantic": {
+    "color": {
+      "background": "{primitive.color.white}",
+      "text": "{primitive.color.ink}",
+      "primary": "{primitive.color.slate}",
+      "onPrimary": "{primitive.color.white}",
+      "secondary": "{primitive.color.teal}",
+      "onSecondary": "{primitive.color.white}",
+      "highlight": "{primitive.color.sand}",
+      "onHighlight": "{primitive.color.ink}",
+      "selected": "{primitive.color.periwinkle}",
+      "onSelected": "{primitive.color.ink}",
+      "focus": "{primitive.color.slate}",
+      "controlBorder": "{primitive.color.slate}"
+    }
+  },
+  "component": {
+    "primaryButton": {
+      "background": "{semantic.color.primary}",
+      "foreground": "{semantic.color.onPrimary}",
+      "minimumHeight": "{primitive.touchMinimum}"
+    },
+    "selectedDivision": {
+      "background": "{semantic.color.selected}",
+      "foreground": "{semantic.color.onSelected}"
+    },
+    "scoreInput": {
+      "text": "{semantic.color.text}",
+      "background": "{semantic.color.background}",
+      "border": "{semantic.color.controlBorder}"
+    },
+    "upNext": {
+      "background": "{semantic.color.highlight}",
+      "foreground": "{semantic.color.onHighlight}"
+    }
+  }
+}
