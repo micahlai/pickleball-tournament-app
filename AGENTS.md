@@ -4,7 +4,7 @@
 
 On 2026-10-16 the user authorized M0 and M1 implementation, parallel work where possible, and incremental Git commits. Complete the planning handoff and runnable Flutter iOS/Android and web foundations, with local development tools, configuration, and checks.
 
-M2–M6 remain outside this authorization: do not implement authentication, provision services, create database migrations, implement tournament features, or deploy. The earlier documentation-only restriction is superseded for M0/M1. The user plans to push the repository and configure GitHub integration/domain in Vercel.
+The user subsequently requested shadcn UI, then continuation to M2. Use official shadcn components for the React website and matching native Flutter styling. M2 authentication, local storage/migrations and tournament access are authorized; M3–M6 and hosted provisioning/deployment remain gated. Use a free local Supabase setup for now. The user plans to push the repository and configure GitHub integration/domain in Vercel.
 
 The user asked to be consulted instead of having requirements assumed. Record unanswered questions as unresolved. Distinguish confirmed user requirements, source-document statements, proposals, and accepted decisions. A recommendation is not an accepted decision.
 
@@ -32,6 +32,7 @@ Project-local reusable skills are in `.agents/skills/`: `courtwave-planning`, `c
 - Managers can rearrange schedules and vary court allocation. Scheduling is part of launch scope.
 - Public links/QR codes work without login; player names are the only public player details.
 - Use email/password sign-in. Any signed-in manager may create a tournament and becomes its main admin; that admin invites submanagers.
+- Anyone may register a manager account. Submanagers edit all tournament content; only the main admin manages access. New tournaments are private drafts until the main admin publishes them.
 - SMS and offline support are later scope; first release requires internet.
 - Prefer free services. Raise required paid resources to the user before provisioning.
 

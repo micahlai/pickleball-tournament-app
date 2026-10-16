@@ -1,3 +1,7 @@
+import { CalendarDays } from "lucide-react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
+
 export default function HomePage() {
   return (
     <main id="main-content" className="page-shell" tabIndex={-1}>
@@ -14,20 +18,22 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="tournament-empty" aria-labelledby="tournament-heading">
-        <div className="empty-symbol" aria-hidden="true">
-          <svg viewBox="0 0 48 48" fill="none">
-            <rect x="8" y="10" width="32" height="30" rx="4" />
-            <path d="M8 20h32M16 7v7M32 7v7M17 28h5M27 28h4M17 33h5" />
-          </svg>
-        </div>
-        <div>
-          <h2 id="tournament-heading">No tournament open</h2>
-          <p>When tournament viewing is available, open the link or scan the QR code shared by your organizer. You won’t need a player account.</p>
-          <p className="supporting-copy">This is an early preview. Tournament pages and manager sign-in are coming in a future update.</p>
-        </div>
+      <section aria-labelledby="tournament-heading">
+        <Card className="gap-5 py-6 shadow-none sm:py-8 [--card-spacing:--spacing(6)] sm:[--card-spacing:--spacing(8)]">
+          <CardHeader className="grid-cols-[48px_1fr] items-center gap-x-4">
+            <div className="flex size-12 items-center justify-center rounded-lg bg-highlight text-highlight-foreground" aria-hidden="true">
+              <CalendarDays className="size-6" />
+            </div>
+            <CardTitle><h2 id="tournament-heading">No tournament open</h2></CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <p>When tournament viewing is available, open the link or scan the QR code shared by your organizer. You won’t need a player account.</p>
+            <CardDescription>This is an early preview. Tournament pages and manager sign-in are coming in a future update.</CardDescription>
+          </CardContent>
+        </Card>
       </section>
 
+      <Separator className="mt-8" />
       <section className="manager-note" aria-labelledby="manager-heading">
         <h2 id="manager-heading">For tournament managers</h2>
         <p>We’re preparing one place to plan waves and divisions, arrange courts, and keep everyone up to date.</p>

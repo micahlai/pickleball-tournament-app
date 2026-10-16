@@ -17,5 +17,5 @@ Use large touch targets, visible keyboard focus, labeled score inputs, scalable 
 
 No SMS setup or offline-write UI belongs in launch scope. Do not introduce payments, social feeds, galleries, or a directory without a user decision.
 
-Read the current authorization in AGENTS.md. M0/M1 now allow app scaffolds and branded foundation shells. Do not implement login or tournament workflows before their milestones are authorized. Verify actual contrast and source-rule alignment; avoid claiming screenshot or runtime verification when only documents were reviewed.
+Use official shadcn source components for the React website. Preserve native Flutter widgets with matching tokens; do not replace Flutter with a React UI framework. M2 login and tournament access are authorized. Scheduling/scoring workflows remain gated to later milestones. Verify actual contrast and source-rule alignment; avoid claiming screenshot or runtime verification when only documents were reviewed.
 

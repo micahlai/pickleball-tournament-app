@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = { title: "About" };
 
@@ -16,10 +18,10 @@ export default function AboutPage() {
         <h2 id="organizers-heading">For organizers</h2>
         <p>The planned manager tools bring waves, divisions, court schedules and scoring into one tournament workspace.</p>
       </section>
-      <aside className="preview-note" aria-label="Preview status">
-        <p>This early preview introduces Courtwave’s look and layout. Tournament management and viewing are not available yet. The name and logo are temporary.</p>
-      </aside>
-      <Link href="/" className="text-link">Back to home</Link>
+      <Alert role="note" className="my-8 border-accent bg-background" aria-label="Preview status">
+        <AlertDescription>This early preview introduces Courtwave’s look and layout. Tournament management and viewing are not available yet. The name and logo are temporary.</AlertDescription>
+      </Alert>
+      <Button asChild variant="outline" className="min-h-12 px-4"><Link href="/">Back to home</Link></Button>
     </main>
   );
 }

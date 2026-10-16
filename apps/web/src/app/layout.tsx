@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SiteHeader } from "@/components/site-header";
+import { Badge } from "@/components/ui/badge";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -11,14 +12,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="font-sans">
       <body>
         <a className="skip-link" href="#main-content">Skip to content</a>
         <SiteHeader />
         {children}
         <footer className="site-footer">
           <p>Courtwave <span aria-hidden="true">/</span> Pickleball tournament planning</p>
-          <p className="preview-label">Early preview</p>
+          <Badge variant="outline" className="border-transparent bg-highlight px-3 py-1 text-highlight-foreground h-auto">Early preview</Badge>
         </footer>
       </body>
     </html>

@@ -7,7 +7,7 @@ description: Maintain Courtwave project requirements, decisions, milestones, and
 
 Read the repository [AGENTS.md](../../../AGENTS.md), [status](../../../docs/project-status.md), and [open decisions](../../../docs/open-decisions.md) before changing plans.
 
-Read the current authorization in AGENTS.md. The user authorized M0/M1 implementation, parallel work, and incremental commits on 2026-10-16. Keep later features behind their milestone gates; a completed foundation does not authorize M2–M6 or external provisioning/deployment.
+Read the current authorization in AGENTS.md. M0/M1 and parallel incremental commits were authorized; the user then requested shadcn UI and continuation to M2 with free local Supabase. Keep M3–M6 and hosted provisioning/deployment behind their gates.
 
 Separate confirmed user decisions, source-PDF candidates, selected engineering recommendations, and unresolved requirements. Preserve the user's exact ambiguous wording when it matters. Ask for the missing business rule instead of choosing one.
 
