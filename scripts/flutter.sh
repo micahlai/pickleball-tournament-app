@@ -19,6 +19,12 @@ fi
 if [[ -z "${ANDROID_HOME:-}" && -d "$courtwave_tools/android-sdk" ]]; then
   export ANDROID_HOME="$courtwave_tools/android-sdk"
 fi
+if [[ -n "${ANDROID_HOME:-}" ]]; then
+  export PATH="$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator:$PATH"
+fi
+if [[ -z "${ANDROID_AVD_HOME:-}" && -d "$courtwave_tools/android-avd" ]]; then
+  export ANDROID_AVD_HOME="$courtwave_tools/android-avd"
+fi
 if [[ -z "${JAVA_HOME:-}" && -d "$courtwave_tools/jdk-17/Contents/Home" ]]; then
   export JAVA_HOME="$courtwave_tools/jdk-17/Contents/Home"
   export PATH="$JAVA_HOME/bin:$PATH"
